@@ -1,3 +1,7 @@
+<div align="center">
+ <img alt="orkanskader" height="200px" src="./assets/orkanskader-logo.png">
+</div>
+
 # Orkanskader
 
 Harnessing data to forecast hurricane impact and financial losses.
