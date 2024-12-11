@@ -2,4 +2,8 @@
 
 This file contains the attributions for the datasets that we utilize in orkanskader.
 
-- US Zip Code Dataset (uszips.csv): https://simplemaps.com/data/us-zips
+- US Zip Code Dataset: [uszips.csv](https://simplemaps.com/data/us-zips)
+- National, State, and County Housing Unit Totals 2020-2023: [florida_county_housing_units.csv](https://www.census.gov/data/tables/time-series/demo/popest/2020s-total-housing-units.html)
+- County Median Home Prices and Monthly Mortgage Payment: [florida_counties_median_price.csv](https://www.nar.realtor/research-and-statistics/housing-statistics/county-median-home-prices-and-monthly-mortgage-payment)
+- FLORIDA COUNTY BOUNDARIES - SEPTEMBER 2015: [coast_data](https://fgdl.org/zips/metadata/htm/cntbnd_sep15.htm)
+- US County Boundaries: [shape_data](https://public.opendatasoft.com/explore/dataset/us-county-boundaries/table/?flg=en-us&disjunctive.statefp&disjunctive.countyfp&disjunctive.name&disjunctive.namelsad&disjunctive.stusab&disjunctive.state_name&refine.state_name=Florida&dataChart=eyJxdWVyaWVzIjpbeyJjb25maWciOnsiZGF0YXNldCI6InVzLWNvdW50eS1ib3VuZGFyaWVzIiwib3B0aW9ucyI6eyJmbGciOiJlbi11cyIsImRpc2p1bmN0aXZlLnN0YXRlZnAiOnRydWUsImRpc2p1bmN0aXZlLmNvdW50eWZwIjp0cnVlLCJkaXNqdW5jdGl2ZS5uYW1lIjp0cnVlLCJkaXNqdW5jdGl2ZS5uYW1lbHNhZCI6dHJ1ZSwiZGlzanVuY3RpdmUuc3R1c2FiIjp0cnVlLCJkaXNqdW5jdGl2ZS5zdGF0ZV9uYW1lIjp0cnVlLCJyZWZpbmUuc3RhdGVfbmFtZSI6IkZsb3JpZGEifX0sImNoYXJ0cyI6W3siYWxpZ25Nb250aCI6dHJ1ZSwidHlwZSI6ImNvbHVtbiIsImZ1bmMiOiJBVkciLCJ5QXhpcyI6ImFsYW5kIiwic2NpZW50aWZpY0Rpc3BsYXkiOnRydWUsImNvbG9yIjoiI0ZGNTE1QSJ9XSwieEF4aXMiOiJzdGF0ZWZwIiwibWF4cG9pbnRzIjo1MCwic29ydCI6IiJ9XSwidGltZXNjYWxlIjoiIiwiZGlzcGxheUxlZ2VuZCI6dHJ1ZSwiYWxpZ25Nb250aCI6dHJ1ZX0%3D&location=6,27.74868,-83.8046&basemap=jawg.light)
