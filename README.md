@@ -42,10 +42,10 @@ To properly run `run.sh` you need the following parameters:
 
 ```
 $ cd src
-$ bash run.sh <longitude = [-79,-84]> <latitude = [24,31]> <radius_64 (km)> <radius_max (km)>
+$ bash run.sh <longitude [-79.0,-84.0]> <latitude [24.0,31.0]> <radius_64 (km)> <radius_max (km)>
 ```
 
-The diagram will be generated in `data/` as `hurricane@(<long>,<lat>&<radius>)`.
+The diagram will be generated in `data/` as `hurricane@(<long>,<lat>&<radius_max>)`.
 The estimated damage will appear as printed text on the console.
 
 
