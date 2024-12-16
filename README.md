@@ -37,14 +37,15 @@ TBA
 
 ### Running the Damage Model
 
-Use the BASH script `run.sh` located in src to generate a hurricane damage model. 
-To run `run.sh` you need the following:
+Use the BASH script `run.sh` located in `src/` to generate a hurricane damage model. 
+To properly run `run.sh` you need the following parameters:
 
 ```
-$ bash run.sh <longitude> <latitude> <radius_64> <radius_max>
+$ cd src
+$ bash run.sh <longitude = [-79,-84]> <latitude = [24,31]> <radius_64 (km)> <radius_max (km)>
 ```
 
-The diagram will be generated in `data/` as `hurricane@(<long>,<lat>&<radius>)`
+The diagram will be generated in `data/` as `hurricane@(<long>,<lat>&<radius>)`.
 The estimated damage will appear as printed text on the console.
 
 
