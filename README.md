@@ -20,3 +20,31 @@ The project consists of a couple of segments,
 - Matthew Brownrigg
 - Beatrix Wen
 - Richard Zhang
+
+### How to build
+This project was built using conda environment manager so it is recommended you use a conda distribution.
+With conda you can use the `orkan.yml` file with:
+
+```
+$ conda env create -f orkan.yml
+```
+
+This will install all the requisite libraries to run our files.
+
+### Running the Predictive Model
+
+TBA
+
+### Running the Damage Model
+
+Use the BASH script `run.sh` located in src to generate a hurricane damage model. 
+To run `run.sh` you need the following:
+
+```
+$ bash run.sh <longitude> <latitude> <radius_64> <radius_max>
+```
+
+The diagram will be generated in `data/` as `hurricane@(<long>,<lat>&<radius>)`
+The estimated damage will appear as printed text on the console.
+
+
