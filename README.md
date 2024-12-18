@@ -34,11 +34,11 @@ This will install all the requisite libraries to run our files.
 ### Running the Hurricane Range Predictive Model
 
 - Rmax prediction: 
-Run Rmax_Prediction.ipynb 
+Run `Rmax_Prediction.ipynb`
 - Rmax specific to Florida region: 
-Run Rmax_Prediction_FL.ipynb
+Run `Rmax_Prediction_FL.ipynb`
 - Hurricane location prediction: 
-Run Deep_Learning_Hurricane_Location.ipynb
+Run `Deep_Learning_Hurricane_Location.ipynb`
 
 ### Results from the Hurricane Range Prediction
 <div align="center">
@@ -62,4 +62,11 @@ $ bash run.sh <longitude [-79.0,-84.0]> <latitude [24.0,31.0]> <radius_64 (km)> 
 The diagram will be generated in `data/` as `hurricane@(<long>,<lat>&<radius_max>)`.
 The estimated damage will appear as printed text on the console.
 
+### Results from Running Damage Model
+```
+$ bash run.sh -80.1918 25.7617 120 60
+```
+<div align="center">
+ <img alt="orkanskader" height="300px" src="./assets/hurricane%40(25.7617%2C-80.1918)%2660.0.png">
+</div>
 
