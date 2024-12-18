@@ -12,6 +12,11 @@ import pygmt
 
 import argparse
 
+import numpy as np
+
+import warnings
+warnings.filterwarnings("ignore")
+
 # Define the lon, lat, and radius
 parser = argparse.ArgumentParser(description="Create a shape projection")
 parser.add_argument("--lon", type=float, default=-82.204141, help="Longitude of the center of the circle")
@@ -144,17 +149,38 @@ coastal_intersections = intersections_max[intersections_max["COASTAL"] == "Y"]
 # Remove coastal counties from max
 intersections_max = intersections_max[intersections_max["COASTAL"] == "N"]
 
-print(coastal_intersections)
-print(intersections_max)
-print(only_intersections_64)
+damage_coast_max = 0
+damage_max = 0
+damage_64 = 0
 
 # Calculate the total damage based on radius of 64 and max
-damage_coast_max = coastal_intersections["County_Valuation"].sum() * 0.020  # 2.0%
-damage_max = intersections_max["County_Valuation"].sum() * 0.015 # 1.5%
-damage_64 = only_intersections_64["County_Valuation"].sum() * 0.010 # 1.0%
-print("damage_coast_max", '${:,.2f}'.format(damage_coast_max))
-print("damage_max", '${:,.2f}'.format(damage_max))
-print("damage_64", '${:,.2f}'.format(damage_64))
+# Calculate the county valuation
+for idx, county in coastal_intersections.iterrows():
+    damage_data = np.random.normal(0.05, 0.10, int(county["2023_Units"] * 0.64)) # Assume the median home price is normally distributed
+    damage_data.clip(0, 1)
+    housing_data = np.random.normal(county["Median_Home_Price_Q1_2024"], county["Median_Home_Price_Q1_2024"] * 0.5, int(county["2023_Units"] * 0.64)) # Assume the median home price is normally distributed with a standard deviation of $100,000
+    damage_coast_max += (damage_data * housing_data).sum()
+
+for idx, county in intersections_max.iterrows():
+    damage_data = np.random.normal(0.025, 0.10, int(county["2023_Units"] * 0.64)) # Assume the median home price is normally distributed
+    damage_data.clip(0, 1)
+    housing_data = np.random.normal(county["Median_Home_Price_Q1_2024"], county["Median_Home_Price_Q1_2024"] * 0.5, int(county["2023_Units"] * 0.64)) # Assume the median home price is normally distributed with a standard deviation of $100,000
+    damage_max += (damage_data * housing_data).sum()
+
+for idx, county in only_intersections_64.iterrows():
+    damage_data = np.random.normal(0.015, 0.10, int(county["2023_Units"] * 0.64)) # Assume the median home price is normally distributed
+    damage_data.clip(0, 1)
+    housing_data = np.random.normal(county["Median_Home_Price_Q1_2024"], county["Median_Home_Price_Q1_2024"] * 0.5, int(county["2023_Units"] * 0.64)) # Assume the median home price is normally distributed with a standard deviation of $100,000
+    damage_64 += (damage_data * housing_data).sum()
+
+DEBUG = False
+if (DEBUG):
+    damage_coast_max = coastal_intersections["County_Valuation"].sum() * 0.020  # 2.0%
+    damage_max = intersections_max["County_Valuation"].sum() * 0.015 # 1.5%
+    damage_64 = only_intersections_64["County_Valuation"].sum() * 0.010 # 1.0%
+    print("damage_coast_max", '${:,.2f}'.format(damage_coast_max))
+    print("damage_max", '${:,.2f}'.format(damage_max))
+    print("damage_64", '${:,.2f}'.format(damage_64))
 total_damage = damage_coast_max + damage_max + damage_64
 print(f"Total County Valuation: {'${:,.2f}'.format(total_valuation)}")
 print(f"Total Damage: {'${:,.2f}'.format(total_damage)}")
