@@ -31,14 +31,23 @@ $ conda env create -f orkan.yml
 
 This will install all the requisite libraries to run our files.
 
-### Running the Predictive Model
+### Running the Hurricane Range Predictive Model
 
 - Rmax prediction: 
-Run /Users/beatrixwen/Orkanskader/orkanskader/Rmax_Prediction.ipynb 
+Run Rmax_Prediction.ipynb 
 - Rmax specific to Florida region 
-Run /Users/beatrixwen/Orkanskader/orkanskader/Rmax_Prediction_FL.ipynb
+Run Rmax_Prediction_FL.ipynb
 - Hurricane location prediction: 
-Run /Users/beatrixwen/Orkanskader/orkanskader/Deep_Learning_Hurricane_Location.ipynb
+Run Deep_Learning_Hurricane_Location.ipynb
+
+### Results from the Hurricane Range Prediction
+<div align="center">
+ <img alt="orkanskader" height="300px" src="./assets/Test_lat.png">
+</div>
+<div align="center">
+ <img alt="orkanskader" height="300px" src="./assets/Test_lon.png">
+</div>
+
 
 ### Running the Damage Model
 
