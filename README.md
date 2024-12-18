@@ -31,7 +31,7 @@ $ conda env create -f orkan.yml
 
 This will install all the requisite libraries to run our files.
 
-### Running the Hurricane Range Predictive Model
+## Running the Hurricane Range Predictive Model
 
 - Rmax prediction: 
 Run `Rmax_Prediction.ipynb`
@@ -49,7 +49,7 @@ Run `Deep_Learning_Hurricane_Location.ipynb`
 </div>
 
 
-### Running the Damage Model
+## Running the Damage Model
 
 Use the BASH script `run.sh` located in `src/` to generate a hurricane damage model. 
 To properly run `run.sh` you need the following parameters:
