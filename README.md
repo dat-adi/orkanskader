@@ -33,7 +33,12 @@ This will install all the requisite libraries to run our files.
 
 ### Running the Predictive Model
 
-TBA
+- Rmax prediction: 
+Run /Users/beatrixwen/Orkanskader/orkanskader/Rmax_Prediction.ipynb 
+- Rmax specific to Florida region 
+Run /Users/beatrixwen/Orkanskader/orkanskader/Rmax_Prediction_FL.ipynb
+- Hurricane location prediction: 
+Run /Users/beatrixwen/Orkanskader/orkanskader/Deep_Learning_Hurricane_Location.ipynb
 
 ### Running the Damage Model
 
