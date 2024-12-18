@@ -35,7 +35,7 @@ This will install all the requisite libraries to run our files.
 
 - Rmax prediction: 
 Run Rmax_Prediction.ipynb 
-- Rmax specific to Florida region 
+- Rmax specific to Florida region:  
 Run Rmax_Prediction_FL.ipynb
 - Hurricane location prediction: 
 Run Deep_Learning_Hurricane_Location.ipynb
