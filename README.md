@@ -21,7 +21,7 @@ The project consists of a couple of segments,
 - Beatrix Wen
 - Richard Zhang
 
-### How to build
+## How to build
 This project was built using conda environment manager so it is recommended you use a conda distribution.
 With conda you can use the `orkan.yml` file with:
 
