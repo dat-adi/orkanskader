@@ -33,13 +33,12 @@ This will install all the requisite libraries to run our files.
 
 ## Running the Hurricane Range & Location Predictive Model
 
-- Rmax prediction: 
-Run `Rmax_Prediction.ipynb`
-- Rmax specific to Florida region: 
-Run `Rmax_Prediction_FL.ipynb`
-
-- Hurricane location prediction: 
-Run `Deep_Learning_Hurricane_Location.ipynb`
+- Rmax prediction: \
+Run [Rmax_Prediction.ipynb](https://github.com/dat-adi/orkanskader/blob/main/src/Rmax_Prediction.ipynb)
+- Rmax specific to Florida region: \
+Run [Rmax_Prediction_FL.ipynb](https://github.com/dat-adi/orkanskader/blob/main/src/Rmax_Prediction_FL.ipynb)
+- Hurricane location prediction: \
+Run [Deep_Learning_Hurricane_Location.ipynb](https://github.com/dat-adi/orkanskader/blob/main/src/Deep_Learning_Hurricane_Location.ipynb)
 
 ### Results from the Hurricane Range Prediction
 <div align="center">
