@@ -73,6 +73,6 @@ The estimated damage will appear as printed text on the console.
 $ bash run.sh -80.1918 25.7617 120 60
 ```
 <div align="center">
- <img alt="orkanskader" height="300px" src="./assets/hurricane%40(25.7617%2C-80.1918)%2660.0.png">
+ <img alt="orkanskader" height="400px" src="./assets/hurricane%40(25.7617%2C-80.1918)%2660.0.png">
 </div>
 
