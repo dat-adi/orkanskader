@@ -43,7 +43,7 @@ Run `Deep_Learning_Hurricane_Location.ipynb`
 
 ### Results from the Hurricane Range Prediction
 <div align="center">
- <img alt="orkanskader" height="300px" src="./assets/Rmax_pred_using_formula.png">
+ <img alt="orkanskader" height="400px" src="./assets/Rmax_pred_using_formula.png">
 </div>
 
 ### Results from the Hurricane Location Prediction
